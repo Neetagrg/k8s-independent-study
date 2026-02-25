@@ -1,3 +1,5 @@
+[![CI/CD Pipeline](https://github.com/Neetagrg/k8s-independent-study/actions/workflows/ci.yml/badge.svg)](https://github.com/Neetagrg/k8s-independent-study/actions/workflows/ci.yml)
+
 # Kubernetes Independent Study Project
 
 **Resilient Kubernetes-Based CI/CD Deployment**
@@ -246,7 +248,7 @@ This project is for educational purposes only.
 **Neeta Misericordia**
 - GitHub: [@Neetagrg](https://github.com/Neetagrg)
 - LinkedIn: [Neeta Misericordia](https://www.linkedin.com/in/neeta-misericordia-208b32368/)
-- Portfolio: [neetamisericordia.com](https://neetamisericordia.com)
+- Portfolio: [neetamisericordia.com](https://neetamisericordia.c)
 
 ---
 
