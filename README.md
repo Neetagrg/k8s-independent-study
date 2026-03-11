@@ -247,7 +247,6 @@ This project is for educational purposes only.
 
 **Neeta Misericordia**
 - GitHub: [@Neetagrg](https://github.com/Neetagrg)
-- LinkedIn: [Neeta Misericordia](https://www.linkedin.com/in/neeta-misericordia-208b32368/)
 - Portfolio:(https://neetamisericordia.com)
 
 ---
