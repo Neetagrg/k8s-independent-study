@@ -1,0 +1,50 @@
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  creationTimestamp: "2026-04-15T23:39:32Z"
+  name: k8s-microservice
+  namespace: default
+  resourceVersion: "8810"
+  uid: ad3de260-4b33-48f9-aeb9-0cfae8138db7
+spec:
+  maxReplicas: 5
+  metrics:
+  - resource:
+      name: cpu
+      target:
+        averageUtilization: 50
+        type: Utilization
+    type: Resource
+  minReplicas: 2
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: k8s-microservice
+status:
+  conditions:
+  - lastTransitionTime: "2026-04-15T23:39:47Z"
+    message: recent recommendations were higher than current one, applying the highest
+      recent recommendation
+    reason: ScaleDownStabilized
+    status: "True"
+    type: AbleToScale
+  - lastTransitionTime: "2026-04-15T23:39:47Z"
+    message: the HPA was able to successfully calculate a replica count from cpu resource
+      utilization (percentage of request)
+    reason: ValidMetricFound
+    status: "True"
+    type: ScalingActive
+  - lastTransitionTime: "2026-04-15T23:39:47Z"
+    message: the desired count is within the acceptable range
+    reason: DesiredWithinRange
+    status: "False"
+    type: ScalingLimited
+  currentMetrics:
+  - resource:
+      current:
+        averageUtilization: 5
+        averageValue: 5m
+      name: cpu
+    type: Resource
+  currentReplicas: 2
+  desiredReplicas: 2
